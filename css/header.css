@@ -1,0 +1,29 @@
+body header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #eee;
+  text-align: right; }
+  body header button {
+    padding: 0.75% 1.25%;
+    border: none;
+    font: 100% SegoeMDL2;
+    outline: none; }
+    body header button.close {
+      border-top-right-radius: 5px; }
+    body header button.minimize:hover {
+      background-color: #ccc; }
+    body header button.minimize:active {
+      background-color: #aaa; }
+    body header button.maximize:hover {
+      background-color: #ccc; }
+    body header button.maximize:active {
+      background-color: #aaa; }
+    body header button.close:hover {
+      background-color: #f00;
+      color: white; }
+    body header button.close:active {
+      background-color: #c00; }
+
+/*# sourceMappingURL=header.css.map */

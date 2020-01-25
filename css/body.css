@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "SegoeMDL2";
+  src: url("../font/segoe/Segoe MDL2 Assets.otf"); }
+@font-face {
+  font-family: "Prime";
+  src: url("../font/prime/prime-regular-x.ttf"); }
+@font-face {
+  font-family: "PrimeLight";
+  src: url("../font/prime/prime-light.ttf"); }
+@font-face {
+  font-family: "Awesome";
+  src: url("../font/awesome/awesome.ttf"); }
+@font-face {
+  font-family: "Moon";
+  src: url("../font/moon/moon.otf"); }
+body {
+  background: url(../img/big.jpg);
+  margin: 5% 25%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px; }
+
+/*# sourceMappingURL=body.css.map */

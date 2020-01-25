@@ -1,0 +1,30 @@
+$primary-color: #333
+
+body
+   header
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+      box-sizing: border-box
+      color: $primary-color
+      background-color: #eee
+      text-align: right
+      button
+         padding: 0.75% 1.25%
+         border: none
+         font: 100% SegoeMDL2
+         outline: none
+         &.close
+            border-top-right-radius: 5px
+         &.minimize:hover
+            background-color: #ccc
+         &.minimize:active
+            background-color: #aaa
+         &.maximize:hover
+            background-color: #ccc
+         &.maximize:active
+            background-color: #aaa   
+         &.close:hover
+            background-color: #f00
+            color: white
+         &.close:active
+            background-color: #c00
