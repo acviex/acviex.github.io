@@ -1,0 +1,122 @@
+@font-face
+   font-family: "SegoeMDL2"
+   src : url("../font/segoe/Segoe MDL2 Assets.otf")
+   
+@font-face
+   font-family: "Prime"
+   src : url("../font/prime/prime-regular-x.ttf")
+   
+@font-face
+   font-family: "PrimeLight"
+   src : url("../font/prime/prime-light.ttf")
+   
+@font-face
+   font-family: "Awesome"
+   src : url("../font/awesome/awesome.ttf")
+   
+@font-face
+   font-family: "Moon"
+   src : url("../font/moon/moon.otf")
+
+$primary-color: #333
+
+@keyframes gradient
+   0%
+      background-position: 0% 50%
+   50%
+      background-position: 100% 50%
+   100%
+      background-position: 0% 50%
+      
+@keyframes gradient_mini
+   0%
+      background-position: 0% 0%
+   50%
+      background-position: 100% 0%
+   100%
+      background-position: 0% 0%
+      
+
+
+body
+   background: url(../img/big.jpg)
+   margin: 5% 25%
+   box-shadow: 0 0 10px rgba(0,0,0,0.5)
+   border-radius: 5px
+   header
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+      box-sizing: border-box
+      color: $primary-color
+      background-color: #eee
+      text-align: right
+      button
+         padding: 0.75% 1.25%
+         border: none
+         font: 100% SegoeMDL2
+         outline: none
+         &.close
+            border-top-right-radius: 5px
+         &.minimize:hover
+            background-color: #ccc
+         &.minimize:active
+            background-color: #aaa
+         &.maximize:hover
+            background-color: #ccc
+         &.maximize:active
+            background-color: #aaa   
+         &.close:hover
+            background-color: #f00
+            color: white
+         &.close:active
+            background-color: #c00
+   section
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat
+      animation: gradient 15s ease infinite
+      transition: background-size 0.25s linear, background-position 0.5s linear
+      background-size: 200% 200%
+      border-bottom-left-radius: 5px
+      border-bottom-right-radius: 5px
+      height: 700px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      .second-page
+         background-size: 400% 400%
+      h1
+         font: 400% Prime
+         color: white
+         text-align: center
+      h2
+         font: 200% PrimeLight
+         color: white
+         text-align: center
+      h3
+         font: 120% Awesome
+         color: white
+         text-align: center
+         a
+            color: white
+            text-decoration: none
+         a:hover
+            color: rgba(255,255,255,0.75)
+         i
+            letter-spacing: 2px
+            font: 80% Moon
+      button
+         width: 40%
+         align-self: center
+         margin: 5%
+         padding: 3%
+         border: none
+         outline: none
+         border-radius: 5px
+         border: 4px solid white
+         background: rgba(0,0,0,0)
+         font: 200% PrimeLight
+         color: white
+         cursor: pointer
+      button:hover
+         background: white
+         color: rgba(0,0,0,1)
+         transition: background 0.25s
