@@ -27,7 +27,8 @@ body header {
   background-color: #eee;
   text-align: right; }
   body header button {
-    padding: 0.75% 1.25%;
+    height: 30px;
+    width: 40px;
     border: none;
     font: 100% SegoeMDL2;
     outline: none; }
@@ -54,7 +55,7 @@ body header {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-@keyframes gradient_mini {
+@keyframes gradient-mini {
   0% {
     background-position: 0% 0%; }
   50% {
@@ -62,9 +63,9 @@ body header {
   100% {
     background-position: 0% 0%; } }
 body section {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat, white;
   animation: gradient 15s ease infinite;
-  transition: background-size 0.25s linear, background-position 0.5s linear;
+  transition: background-size 0.15s linear;
   background-size: 200% 200%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -72,6 +73,8 @@ body section {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  body section h1, body section h2, body section h3 {
+    transition: margin 0.15s linear; }
   body section h1 {
     font: 400% Prime;
     color: white;
@@ -92,22 +95,50 @@ body section {
     body section h3 i {
       letter-spacing: 2px;
       font: 80% Moon; }
+  body section h4 {
+    text-align: center;
+    transition: display 0.15s linear;
+    display: none;
+    font: 150% Bahnschrift Condensed;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.5); }
   body section button {
-    width: 40%;
+    width: 400px;
     align-self: center;
-    margin: 5%;
-    padding: 3%;
+    margin: 50px;
+    padding: 30px;
     border: none;
     outline: none;
-    border-radius: 5px;
-    border: 4px solid white;
+    border-radius: 7px;
+    border: 3px solid white;
     background: rgba(0, 0, 0, 0);
-    font: 200% PrimeLight;
+    font: 200% Prime;
     color: white;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: background 0.15s, padding 0.15s; }
   body section button:hover {
     background: white;
+    color: black; }
+  body section.second-page h1 {
+    margin: -180px 0 0 0; }
+  body section.second-page h2 {
     color: black;
-    transition: background 0.25s; }
+    font: 200% Bahnschrift Condensed; }
+  body section.second-page h2 {
+    margin: 70px 0 0 0; }
+  body section.second-page h3 {
+    display: none; }
+  body section.second-page h4 {
+    display: inline-block; }
+  body section.second-page button {
+    background: linear-gradient(135deg, rgba(238, 119, 82, 0), rgba(231, 60, 126, 0), rgba(35, 166, 213, 0), rgba(35, 213, 171, 0)) no-repeat;
+    background-size: 400% 400%;
+    color: black;
+    animation: gradient 15s ease infinite;
+    border-color: black;
+    padding: 10px; }
+  body section.second-page button:hover {
+    background: linear-gradient(135deg, rgba(238, 119, 82, 0.25), rgba(231, 60, 126, 0.25), rgba(35, 166, 213, 0.25), rgba(35, 213, 171, 0.25)) no-repeat;
+    background-size: 120% 120%; }
 
 /*# sourceMappingURL=style.css.map */

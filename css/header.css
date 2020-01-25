@@ -6,7 +6,8 @@ body header {
   background-color: #eee;
   text-align: right; }
   body header button {
-    padding: 0.75% 1.25%;
+    height: 30px;
+    width: 40px;
     border: none;
     font: 100% SegoeMDL2;
     outline: none; }
