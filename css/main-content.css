@@ -49,9 +49,10 @@ body section {
     text-align: center;
     transition: display 0.15s linear;
     display: none;
-    font: 150% Bahnschrift Condensed;
-    margin-top: 20px;
-    color: rgba(0, 0, 0, 0.5); }
+    font: 110% SansProLight;
+    font-weight: 600;
+    padding: 15px 0;
+    color: rgba(0, 0, 0, 0.6); }
   body section button {
     width: 400px;
     align-self: center;
@@ -60,7 +61,7 @@ body section {
     border: none;
     outline: none;
     border-radius: 7px;
-    border: 3px solid white;
+    border: 1px solid white;
     background: rgba(0, 0, 0, 0);
     font: 200% Prime;
     color: white;
@@ -69,26 +70,7 @@ body section {
   body section button:hover {
     background: white;
     color: black; }
-  body section.second-page h1 {
-    margin: -180px 0 0 0; }
-  body section.second-page h2 {
-    color: black;
-    font: 200% Bahnschrift Condensed; }
-  body section.second-page h2 {
-    margin: 70px 0 0 0; }
-  body section.second-page h3 {
+  body section div {
     display: none; }
-  body section.second-page h4 {
-    display: inline-block; }
-  body section.second-page button {
-    background: linear-gradient(135deg, rgba(238, 119, 82, 0), rgba(231, 60, 126, 0), rgba(35, 166, 213, 0), rgba(35, 213, 171, 0)) no-repeat;
-    background-size: 400% 400%;
-    color: black;
-    animation: gradient 15s ease infinite;
-    border-color: black;
-    padding: 10px; }
-  body section.second-page button:hover {
-    background: linear-gradient(135deg, rgba(238, 119, 82, 0.25), rgba(231, 60, 126, 0.25), rgba(35, 166, 213, 0.25), rgba(35, 213, 171, 0.25)) no-repeat;
-    background-size: 120% 120%; }
 
 /*# sourceMappingURL=main-content.css.map */

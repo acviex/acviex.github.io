@@ -13,6 +13,15 @@
 @font-face {
   font-family: "Moon";
   src: url("../font/moon/moon.otf"); }
+@font-face {
+  font-family: "SansProLight";
+  src: url("../font/sans-pro/sans-pro-light.otf"); }
+@font-face {
+  font-family: "SansPro";
+  src: url("../font/sans-pro/sans-pro.otf"); }
+@font-face {
+  font-family: "SansProBold";
+  src: url("../font/sans-pro/sans-pro-bold.otf"); }
 body {
   background: url(../img/big.jpg);
   margin: 5% 25%;
@@ -99,9 +108,10 @@ body section {
     text-align: center;
     transition: display 0.15s linear;
     display: none;
-    font: 150% Bahnschrift Condensed;
-    margin-top: 20px;
-    color: rgba(0, 0, 0, 0.5); }
+    font: 110% SansProLight;
+    font-weight: 600;
+    padding: 15px 0;
+    color: rgba(0, 0, 0, 0.6); }
   body section button {
     width: 400px;
     align-self: center;
@@ -110,7 +120,7 @@ body section {
     border: none;
     outline: none;
     border-radius: 7px;
-    border: 3px solid white;
+    border: 1px solid white;
     background: rgba(0, 0, 0, 0);
     font: 200% Prime;
     color: white;
@@ -119,26 +129,60 @@ body section {
   body section button:hover {
     background: white;
     color: black; }
-  body section.second-page h1 {
-    margin: -180px 0 0 0; }
-  body section.second-page h2 {
-    color: black;
-    font: 200% Bahnschrift Condensed; }
-  body section.second-page h2 {
-    margin: 70px 0 0 0; }
-  body section.second-page h3 {
+  body section div {
     display: none; }
-  body section.second-page h4 {
-    display: inline-block; }
-  body section.second-page button {
-    background: linear-gradient(135deg, rgba(238, 119, 82, 0), rgba(231, 60, 126, 0), rgba(35, 166, 213, 0), rgba(35, 213, 171, 0)) no-repeat;
-    background-size: 400% 400%;
-    color: black;
-    animation: gradient 15s ease infinite;
-    border-color: black;
-    padding: 10px; }
-  body section.second-page button:hover {
-    background: linear-gradient(135deg, rgba(238, 119, 82, 0.25), rgba(231, 60, 126, 0.25), rgba(35, 166, 213, 0.25), rgba(35, 213, 171, 0.25)) no-repeat;
-    background-size: 120% 120%; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+body section.second-page h1 {
+  margin: -180px 0 0 0; }
+body section.second-page h2 {
+  color: black;
+  font: 200% SansPro;
+  margin: 180px 0 0 0; }
+body section.second-page h3 {
+  display: none; }
+body section.second-page h4 {
+  display: inline-block; }
+body section.second-page button {
+  background: #14a0d2;
+  background-size: 400% 400%;
+  color: white;
+  animation: gradient 15s ease infinite;
+  border-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  margin: 20px 0;
+  display: none; }
+body section.second-page button:hover {
+  color: #14a0d2;
+  background: white;
+  border-color: #14a0d2;
+  background-size: 120% 120%; }
+body section.second-page div {
+  display: inline-block;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px; }
+  body section.second-page div button {
+    display: inline-block;
+    background: white;
+    border-radius: 0px;
+    border-color: #14a0d2;
+    color: #14a0d2;
+    margin: 0 -1px 0 0;
+    font: 120% Awesome;
+    align-self: center;
+    background: white;
+    width: 100px;
+    text-align: center; }
+  body section.second-page div button:hover {
+    background: #14a0d2;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

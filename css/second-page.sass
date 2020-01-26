@@ -1,0 +1,59 @@
+@keyframes gradient
+   0%
+      background-position: 0% 50%
+   50%
+      background-position: 100% 50%
+   100%
+      background-position: 0% 50%
+      
+$button-width: 400px
+$blue-color: rgb(20,160,210)
+      
+body
+   section
+      &.second-page
+         h1
+            margin: -180px 0 0 0
+         h2
+            color: black
+            font: 200% SansPro
+            margin: 180px 0 0 0
+         h3
+            display: none
+         h4
+            display: inline-block
+         button
+            background: $blue-color
+            background-size: 400% 400%
+            color: white
+            animation: gradient 15s ease infinite
+            border-color: rgba(0,0,0,0)
+            padding: 10px
+            margin: 20px 0
+            display: none
+         button:hover
+            color: $blue-color
+            background: white
+            border-color: $blue-color
+            background-size: 120% 120%
+         div
+            display: inline-block
+            align-self: center
+            flex-direction: column
+            justify-content: center
+            margin-top: 10px
+            button
+               display: inline-block
+               background: white
+               border-radius: 0px
+               border-color: $blue-color
+               color: $blue-color
+               margin: 0 -1px 0 0
+               font: 120% Awesome
+               align-self: center
+               background: white
+               width: 100px
+               text-align: center
+            button:hover
+               background: $blue-color
+               color: white
