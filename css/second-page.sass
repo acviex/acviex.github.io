@@ -8,16 +8,21 @@
       
 $button-width: 400px
 $blue-color: rgb(20,160,210)
-      
+$dark-blue-color: rgb(0,160,170)
+$gray: rgba(0,0,0,0.5)
+
+$first-color: #11998e
+$second-color: #38ef7d
+ 
 body
    section
       &.second-page
          h1
-            margin: -180px 0 0 0
+            margin: -10px 0 0 0
          h2
             color: black
             font: 200% SansPro
-            margin: 180px 0 0 0
+            margin: 100px 0 0 0
          h3
             display: none
          h4
@@ -30,7 +35,6 @@ body
             border-color: rgba(0,0,0,0)
             padding: 10px
             margin: 20px 0
-            display: none
          button:hover
             color: $blue-color
             background: white
@@ -39,20 +43,84 @@ body
          div
             display: inline-block
             align-self: center
+         #social-combo
+            align-self: center
             flex-direction: column
             justify-content: center
-            margin-top: 10px
             button
                display: inline-block
-               background: white
-               border-radius: 0px
-               border-color: $blue-color
-               color: $blue-color
-               margin: 0 -1px 0 0
-               font: 120% Awesome
+               background: transparent
+               border-color: rgba(0,0,0,0.0)
+               border-width: 0 0 3px 0
+               border-radius: 0
+               color: rgba(0,0,0,0.4)
+               font: 220% Awesome
                align-self: center
-               width: 100px
+               width: 80px
+               margin: 0 20px
                text-align: center
+               transition: border-image 1s
             button:hover
-               background: $blue-color
-               color: white
+               border-width: 0 0 3px 0
+               border-image: linear-gradient(to right, $first-color,$second-color)
+               border-image-slice: 1
+               color: $blue-color
+            button:active
+               color: $dark-blue-color
+               
+.form__group
+   position: relative
+   padding: 15px 0 0
+   margin-bottom: 15px
+   
+.form__field
+   font: 100% SansPro
+   width: 300px
+   border: 0
+   border-bottom: 2px solid $gray
+   outline: 0
+   font-size: 1.3rem
+   color: black
+   padding: 7px 0
+   background: transparent
+   transition: border-color 0.2s
+   text-indent: 10px
+
+   &::placeholder
+      color: transparent
+      font: 100% SansPro
+
+   &:placeholder-shown ~ .form__label
+      font-size: 1.3rem
+      cursor: text
+      top: 20px
+      font: 100% SansPro
+      
+.form__label
+   position: absolute
+   top: 0
+   display: block
+   transition: 0.2s
+   font-size: 1rem
+   color: $gray
+   font: 80% SansPro
+   text-indent: 10px
+   
+.form__field:focus
+   ~ .form__label
+      position: absolute
+      top: 0
+      display: block
+      transition: 0.2s
+      font-size: 0.5rem
+      color: $first-color
+      font: 80% SansPro
+   padding-bottom: 6px
+   font-weight: 100
+   border-width: 3px
+   border-image: linear-gradient(to right, $first-color, $second-color)
+   border-image-slice: 1
+   
+.form__field
+   &:required,&:invalid
+      box-shadow:none

@@ -6,11 +6,11 @@
   100% {
     background-position: 0% 50%; } }
 body section.second-page h1 {
-  margin: -180px 0 0 0; }
+  margin: -10px 0 0 0; }
 body section.second-page h2 {
   color: black;
   font: 200% SansPro;
-  margin: 180px 0 0 0; }
+  margin: 100px 0 0 0; }
 body section.second-page h3 {
   display: none; }
 body section.second-page h4 {
@@ -22,8 +22,7 @@ body section.second-page button {
   animation: gradient 15s ease infinite;
   border-color: rgba(0, 0, 0, 0);
   padding: 10px;
-  margin: 20px 0;
-  display: none; }
+  margin: 20px 0; }
 body section.second-page button:hover {
   color: #14a0d2;
   background: white;
@@ -31,23 +30,81 @@ body section.second-page button:hover {
   background-size: 120% 120%; }
 body section.second-page div {
   display: inline-block;
+  align-self: center; }
+body section.second-page #social-combo {
   align-self: center;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 10px; }
-  body section.second-page div button {
+  justify-content: center; }
+  body section.second-page #social-combo button {
     display: inline-block;
-    background: white;
-    border-radius: 0px;
-    border-color: #14a0d2;
-    color: #14a0d2;
-    margin: 0 -1px 0 0;
-    font: 120% Awesome;
+    background: transparent;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 0 0 3px 0;
+    border-radius: 0;
+    color: rgba(0, 0, 0, 0.4);
+    font: 220% Awesome;
     align-self: center;
-    width: 100px;
-    text-align: center; }
-  body section.second-page div button:hover {
-    background: #14a0d2;
-    color: white; }
+    width: 80px;
+    margin: 0 20px;
+    text-align: center;
+    transition: border-image 1s; }
+  body section.second-page #social-combo button:hover {
+    border-width: 0 0 3px 0;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+    color: #14a0d2; }
+  body section.second-page #social-combo button:active {
+    color: #00a0aa; }
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-bottom: 15px; }
+
+.form__field {
+  font: 100% SansPro;
+  width: 300px;
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  text-indent: 10px; }
+  .form__field::placeholder {
+    color: transparent;
+    font: 100% SansPro; }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+    font: 100% SansPro; }
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font: 80% SansPro;
+  text-indent: 10px; }
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 100;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1; }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.5rem;
+    color: #11998e;
+    font: 80% SansPro; }
 
 /*# sourceMappingURL=second-page.css.map */
