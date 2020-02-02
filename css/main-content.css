@@ -12,7 +12,7 @@
     background-position: 100% 0%; }
   100% {
     background-position: 0% 0%; } }
-body section {
+.main-window {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat, white;
   animation: gradient 15s ease infinite;
   transition: background-size 0.15s linear;
@@ -23,29 +23,29 @@ body section {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  body section h1, body section h2, body section h3 {
+  .main-window h1, .main-window h2, .main-window h3 {
     transition: margin 0.15s linear; }
-  body section h1 {
+  .main-window h1 {
     font: 400% Prime;
     color: white;
     text-align: center; }
-  body section h2 {
+  .main-window h2 {
     font: 200% PrimeLight;
     color: white;
     text-align: center; }
-  body section h3 {
+  .main-window h3 {
     font: 120% Awesome;
     color: white;
     text-align: center; }
-    body section h3 a {
+    .main-window h3 a {
       color: white;
       text-decoration: none; }
-    body section h3 a:hover {
+    .main-window h3 a:hover {
       color: rgba(255, 255, 255, 0.75); }
-    body section h3 i {
+    .main-window h3 i {
       letter-spacing: 2px;
       font: 80% Moon; }
-  body section h4 {
+  .main-window h4 {
     text-align: center;
     transition: display 0.15s linear;
     display: none;
@@ -53,7 +53,7 @@ body section {
     font-weight: 600;
     padding: 15px 0;
     color: rgba(0, 0, 0, 0.6); }
-  body section button {
+  .main-window button {
     width: 400px;
     align-self: center;
     margin: 50px;
@@ -67,10 +67,10 @@ body section {
     color: white;
     cursor: pointer;
     transition: background 0.15s, padding 0.15s; }
-  body section button:hover {
+  .main-window button:hover {
     background: white;
     color: black; }
-  body section div {
+  .main-window div {
     display: none; }
 
 /*# sourceMappingURL=main-content.css.map */

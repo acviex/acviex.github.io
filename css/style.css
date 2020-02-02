@@ -28,6 +28,9 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px; }
 
+.visible {
+  display: flex !important; }
+
 body header {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -40,6 +43,7 @@ body header {
     width: 40px;
     border: none;
     font: 100% SegoeMDL2;
+    background-color: inherit;
     outline: none; }
     body header button.close {
       border-top-right-radius: 5px; }
@@ -71,7 +75,7 @@ body header {
     background-position: 100% 0%; }
   100% {
     background-position: 0% 0%; } }
-body section {
+.main-window {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat, white;
   animation: gradient 15s ease infinite;
   transition: background-size 0.15s linear;
@@ -82,29 +86,29 @@ body section {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  body section h1, body section h2, body section h3 {
+  .main-window h1, .main-window h2, .main-window h3 {
     transition: margin 0.15s linear; }
-  body section h1 {
+  .main-window h1 {
     font: 400% Prime;
     color: white;
     text-align: center; }
-  body section h2 {
+  .main-window h2 {
     font: 200% PrimeLight;
     color: white;
     text-align: center; }
-  body section h3 {
+  .main-window h3 {
     font: 120% Awesome;
     color: white;
     text-align: center; }
-    body section h3 a {
+    .main-window h3 a {
       color: white;
       text-decoration: none; }
-    body section h3 a:hover {
+    .main-window h3 a:hover {
       color: rgba(255, 255, 255, 0.75); }
-    body section h3 i {
+    .main-window h3 i {
       letter-spacing: 2px;
       font: 80% Moon; }
-  body section h4 {
+  .main-window h4 {
     text-align: center;
     transition: display 0.15s linear;
     display: none;
@@ -112,7 +116,7 @@ body section {
     font-weight: 600;
     padding: 15px 0;
     color: rgba(0, 0, 0, 0.6); }
-  body section button {
+  .main-window button {
     width: 400px;
     align-self: center;
     margin: 50px;
@@ -126,10 +130,10 @@ body section {
     color: white;
     cursor: pointer;
     transition: background 0.15s, padding 0.15s; }
-  body section button:hover {
+  .main-window button:hover {
     background: white;
     color: black; }
-  body section div {
+  .main-window div {
     display: none; }
 
 @keyframes gradient {
@@ -139,17 +143,17 @@ body section {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-body section.second-page h1 {
+.second-page h1 {
   margin: -10px 0 0 0; }
-body section.second-page h2 {
+.second-page h2 {
   color: black;
   font: 200% SansPro;
   margin: 100px 0 0 0; }
-body section.second-page h3 {
+.second-page h3 {
   display: none; }
-body section.second-page h4 {
+.second-page h4 {
   display: inline-block; }
-body section.second-page button {
+.second-page button {
   background: #14a0d2;
   background-size: 400% 400%;
   color: white;
@@ -157,19 +161,19 @@ body section.second-page button {
   border-color: rgba(0, 0, 0, 0);
   padding: 10px;
   margin: 20px 0; }
-body section.second-page button:hover {
+.second-page button:hover {
   color: #14a0d2;
   background: white;
   border-color: #14a0d2;
   background-size: 120% 120%; }
-body section.second-page div {
+.second-page div {
   display: inline-block;
   align-self: center; }
-body section.second-page #social-combo {
+.second-page #social-combo {
   align-self: center;
   flex-direction: column;
   justify-content: center; }
-  body section.second-page #social-combo button {
+  .second-page #social-combo button {
     display: inline-block;
     background: transparent;
     border-color: rgba(0, 0, 0, 0);
@@ -182,12 +186,12 @@ body section.second-page #social-combo {
     margin: 0 20px;
     text-align: center;
     transition: border-image 1s; }
-  body section.second-page #social-combo button:hover {
+  .second-page #social-combo button:hover {
     border-width: 0 0 3px 0;
     border-image: linear-gradient(to right, #11998e, #38ef7d);
     border-image-slice: 1;
     color: #14a0d2; }
-  body section.second-page #social-combo button:active {
+  .second-page #social-combo button:active {
     color: #00a0aa; }
 
 .form__group {
@@ -240,5 +244,13 @@ body section.second-page #social-combo {
     font-size: 0.5rem;
     color: #11998e;
     font: 80% SansPro; }
+
+.chat {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 700px;
+  display: none;
+  flex-direction: column;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */

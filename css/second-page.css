@@ -5,17 +5,17 @@
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-body section.second-page h1 {
+.second-page h1 {
   margin: -10px 0 0 0; }
-body section.second-page h2 {
+.second-page h2 {
   color: black;
   font: 200% SansPro;
   margin: 100px 0 0 0; }
-body section.second-page h3 {
+.second-page h3 {
   display: none; }
-body section.second-page h4 {
+.second-page h4 {
   display: inline-block; }
-body section.second-page button {
+.second-page button {
   background: #14a0d2;
   background-size: 400% 400%;
   color: white;
@@ -23,19 +23,19 @@ body section.second-page button {
   border-color: rgba(0, 0, 0, 0);
   padding: 10px;
   margin: 20px 0; }
-body section.second-page button:hover {
+.second-page button:hover {
   color: #14a0d2;
   background: white;
   border-color: #14a0d2;
   background-size: 120% 120%; }
-body section.second-page div {
+.second-page div {
   display: inline-block;
   align-self: center; }
-body section.second-page #social-combo {
+.second-page #social-combo {
   align-self: center;
   flex-direction: column;
   justify-content: center; }
-  body section.second-page #social-combo button {
+  .second-page #social-combo button {
     display: inline-block;
     background: transparent;
     border-color: rgba(0, 0, 0, 0);
@@ -48,12 +48,12 @@ body section.second-page #social-combo {
     margin: 0 20px;
     text-align: center;
     transition: border-image 1s; }
-  body section.second-page #social-combo button:hover {
+  .second-page #social-combo button:hover {
     border-width: 0 0 3px 0;
     border-image: linear-gradient(to right, #11998e, #38ef7d);
     border-image-slice: 1;
     color: #14a0d2; }
-  body section.second-page #social-combo button:active {
+  .second-page #social-combo button:active {
     color: #00a0aa; }
 
 .form__group {

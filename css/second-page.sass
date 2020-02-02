@@ -14,59 +14,57 @@ $gray: rgba(0,0,0,0.5)
 $first-color: #11998e
 $second-color: #38ef7d
  
-body
-   section
-      &.second-page
-         h1
-            margin: -10px 0 0 0
-         h2
-            color: black
-            font: 200% SansPro
-            margin: 100px 0 0 0
-         h3
-            display: none
-         h4
-            display: inline-block
-         button
-            background: $blue-color
-            background-size: 400% 400%
-            color: white
-            animation: gradient 15s ease infinite
-            border-color: rgba(0,0,0,0)
-            padding: 10px
-            margin: 20px 0
-         button:hover
-            color: $blue-color
-            background: white
-            border-color: $blue-color
-            background-size: 120% 120%
-         div
-            display: inline-block
-            align-self: center
-         #social-combo
-            align-self: center
-            flex-direction: column
-            justify-content: center
-            button
-               display: inline-block
-               background: transparent
-               border-color: rgba(0,0,0,0.0)
-               border-width: 0 0 3px 0
-               border-radius: 0
-               color: rgba(0,0,0,0.4)
-               font: 220% Awesome
-               align-self: center
-               width: 80px
-               margin: 0 20px
-               text-align: center
-               transition: border-image 1s
-            button:hover
-               border-width: 0 0 3px 0
-               border-image: linear-gradient(to right, $first-color,$second-color)
-               border-image-slice: 1
-               color: $blue-color
-            button:active
-               color: $dark-blue-color
+.second-page
+   h1
+      margin: -10px 0 0 0
+   h2
+      color: black
+      font: 200% SansPro
+      margin: 100px 0 0 0
+   h3
+      display: none
+   h4
+      display: inline-block
+   button
+      background: $blue-color
+      background-size: 400% 400%
+      color: white
+      animation: gradient 15s ease infinite
+      border-color: rgba(0,0,0,0)
+      padding: 10px
+      margin: 20px 0
+   button:hover
+      color: $blue-color
+      background: white
+      border-color: $blue-color
+      background-size: 120% 120%
+   div
+      display: inline-block
+      align-self: center
+   #social-combo
+      align-self: center
+      flex-direction: column
+      justify-content: center
+      button
+         display: inline-block
+         background: transparent
+         border-color: rgba(0,0,0,0.0)
+         border-width: 0 0 3px 0
+         border-radius: 0
+         color: rgba(0,0,0,0.4)
+         font: 220% Awesome
+         align-self: center
+         width: 80px
+         margin: 0 20px
+         text-align: center
+         transition: border-image 1s
+      button:hover
+         border-width: 0 0 3px 0
+         border-image: linear-gradient(to right, $first-color,$second-color)
+         border-image-slice: 1
+         color: $blue-color
+      button:active
+         color: $dark-blue-color
                
 .form__group
    position: relative
