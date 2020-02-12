@@ -1,8 +1,120 @@
+$light-gray: rgba(0,0,0,0.04)
+$gray: rgba(0,0,0,0.4)
+$animation-time: 0.15s
+
+$color1: #7FFFD4
+$color2: #5F9EA0
+$color3: #8B008B
+$color4: #9932CC
+$color5: #6495ED
+
 .chat
    border-bottom-left-radius: 5px
    border-bottom-right-radius: 5px
    height: 700px
    display: none
-   flex-direction: column
-   justify-content: center
+   flex-direction: row
    
+.account-list
+   background-color: white
+   width: 300px
+   align-self: stretch
+   display: flex
+   flex-direction: column
+   .search-bar
+      display: flex
+      flex-direction: row
+      button
+         font: 120% AwesomeRegular
+         padding: 5px 12px 5px 12px
+         margin: 5px
+         border: none
+         border-radius: 20px
+         background: transparent
+         transition: background $animation-time
+         outline: none
+         color: $gray
+         &:hover
+            cursor: pointer
+         &:active
+            background: $light-gray
+      input
+         font: 80% Tahoma
+         align-self: stretch
+         flex: 1
+         margin: 10px 10px 10px 0px
+         padding: 7px
+         text-indent: 3px
+         border-radius: 5px
+         box-shadow: none
+         background: $light-gray
+         border-style: solid
+         border: none
+         &::placeholder
+            color: $gray
+         &:active, &:focus
+            background: transparent
+            
+.accounts
+   align-self: stretch
+   flex: 1
+   display: flex
+   flex-direction: column
+   button
+      outline: none
+      border-style: solid
+      border: none !important
+      padding: 7px
+      display: flex
+      flex-direction: row
+      background-color: transparent
+      &:hover
+         background-color: $light-gray
+         cursor: pointer
+      .Avatar
+         font: 175% Tahoma
+         width: 45px
+         height: 45px
+         display: flex
+         align-items: center
+         justify-content: center
+         border-radius: 50px
+         color: white
+      section
+         font: 100% Tahoma
+         margin-left: 13px
+         display: flex
+         flex-direction: column
+         text-align: left
+         align-items: center
+         flex: 1
+         align-self: stretch
+         .Sender, .Content
+            align-self: stretch
+            flex: 1
+            justify-content: start
+            align-items: center
+            display: flex
+         .Sender
+            font: 95% Tahoma
+            font-weight: 700
+            color: rgba(0,0,0,0.7)
+         .You
+            color: $color5
+         .Content
+            color: $gray
+            
+.message-section
+   align-self: stretch
+   
+.color1
+   background-color: $color1 !important
+   
+.color2
+   background-color: $color2 !important
+   
+.color3
+   background-color: $color3 !important
+   
+.color4
+   background-color: $color4 !important

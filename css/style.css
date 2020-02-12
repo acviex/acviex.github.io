@@ -11,6 +11,9 @@
   font-family: "Awesome";
   src: url("../font/awesome/awesome.ttf"); }
 @font-face {
+  font-family: "AwesomeRegular";
+  src: url("../font/awesome/awesome-regular.ttf"); }
+@font-face {
   font-family: "Moon";
   src: url("../font/moon/moon.otf"); }
 @font-face {
@@ -250,7 +253,110 @@ body header {
   border-bottom-right-radius: 5px;
   height: 700px;
   display: none;
-  flex-direction: column;
-  justify-content: center; }
+  flex-direction: row; }
+
+.account-list {
+  background-color: white;
+  width: 300px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column; }
+  .account-list .search-bar {
+    display: flex;
+    flex-direction: row; }
+    .account-list .search-bar button {
+      font: 120% AwesomeRegular;
+      padding: 5px 12px 5px 12px;
+      margin: 5px;
+      border: none;
+      border-radius: 20px;
+      background: transparent;
+      transition: background 0.15s;
+      outline: none;
+      color: rgba(0, 0, 0, 0.4); }
+      .account-list .search-bar button:hover {
+        cursor: pointer; }
+      .account-list .search-bar button:active {
+        background: rgba(0, 0, 0, 0.04); }
+    .account-list .search-bar input {
+      font: 80% Tahoma;
+      align-self: stretch;
+      flex: 1;
+      margin: 10px 10px 10px 0px;
+      padding: 7px;
+      text-indent: 3px;
+      border-radius: 5px;
+      box-shadow: none;
+      background: rgba(0, 0, 0, 0.04);
+      border-style: solid;
+      border: none; }
+      .account-list .search-bar input::placeholder {
+        color: rgba(0, 0, 0, 0.4); }
+      .account-list .search-bar input:active, .account-list .search-bar input:focus {
+        background: transparent; }
+
+.accounts {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+  .accounts button {
+    outline: none;
+    border-style: solid;
+    border: none !important;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent; }
+    .accounts button:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+      cursor: pointer; }
+    .accounts button .Avatar {
+      font: 175% Tahoma;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      color: white; }
+    .accounts button section {
+      font: 100% Tahoma;
+      margin-left: 13px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      align-items: center;
+      flex: 1;
+      align-self: stretch; }
+      .accounts button section .Sender, .accounts button section .Content {
+        align-self: stretch;
+        flex: 1;
+        justify-content: start;
+        align-items: center;
+        display: flex; }
+      .accounts button section .Sender {
+        font: 95% Tahoma;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.7); }
+      .accounts button section .You {
+        color: #6495ED; }
+      .accounts button section .Content {
+        color: rgba(0, 0, 0, 0.4); }
+
+.message-section {
+  align-self: stretch; }
+
+.color1 {
+  background-color: #7FFFD4 !important; }
+
+.color2 {
+  background-color: #5F9EA0 !important; }
+
+.color3 {
+  background-color: #8B008B !important; }
+
+.color4 {
+  background-color: #9932CC !important; }
 
 /*# sourceMappingURL=style.css.map */
