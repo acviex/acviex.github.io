@@ -49,12 +49,13 @@
   align-self: stretch;
   flex: 1;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-y: scroll; }
   .accounts button {
     outline: none;
     border-style: solid;
     border: none !important;
-    padding: 7px;
+    padding: 7px 10px;
     display: flex;
     flex-direction: row;
     background-color: transparent; }
@@ -96,6 +97,24 @@
 
 .message-section {
   align-self: stretch; }
+
+.time {
+  font: 110% Tahoma !important;
+  color: rgba(0, 0, 0, 0.4) !important; }
+
+.status {
+  font-family: AwesomeRegular;
+  font-size: 14px;
+  padding-top: 5px;
+  margin-left: auto;
+  color: #5DDDB2;
+  letter-spacing: -9px; }
+
+.name {
+  align-self: center; }
+
+.ready {
+  color: #7FFFD4 !important; }
 
 .color1 {
   background-color: #7FFFD4 !important; }

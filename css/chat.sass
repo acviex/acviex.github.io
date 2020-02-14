@@ -7,6 +7,7 @@ $color2: #5F9EA0
 $color3: #8B008B
 $color4: #9932CC
 $color5: #6495ED
+$color6: #5DDDB2
 
 .chat
    border-bottom-left-radius: 5px
@@ -60,11 +61,12 @@ $color5: #6495ED
    flex: 1
    display: flex
    flex-direction: column
+   overflow-y: scroll
    button
       outline: none
       border-style: solid
       border: none !important
-      padding: 7px
+      padding: 7px 10px
       display: flex
       flex-direction: row
       background-color: transparent
@@ -106,6 +108,24 @@ $color5: #6495ED
             
 .message-section
    align-self: stretch
+   
+.time
+   font: 110% Tahoma !important
+   color: $gray !important
+   
+.status
+   font-family: AwesomeRegular
+   font-size: 14px
+   padding-top: 5px
+   margin-left: auto
+   color: $color6
+   letter-spacing: -9px
+
+.name
+   align-self: center
+   
+.ready
+   color: $color1 !important
    
 .color1
    background-color: $color1 !important
