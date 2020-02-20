@@ -8,6 +8,7 @@ $color3: #8B008B
 $color4: #9932CC
 $color5: #6495ED
 $color6: #5DDDB2
+$color7: #F08080
 
 .chat
    border-bottom-left-radius: 5px
@@ -18,7 +19,7 @@ $color6: #5DDDB2
    
 .account-list
    background-color: white
-   width: 300px
+   width: 32%
    align-self: stretch
    display: flex
    flex-direction: column
@@ -55,6 +56,12 @@ $color6: #5DDDB2
             color: $gray
          &:active, &:focus
             background: transparent
+
+@keyframes gradient-rotate
+   0%
+      transform: rotate(0deg)
+   100%
+      transform: rotate(360deg)
             
 .accounts
    align-self: stretch
@@ -70,18 +77,57 @@ $color6: #5DDDB2
       display: flex
       flex-direction: row
       background-color: transparent
+      .unread
+         position: relative
+         display: flex
+         width: 45px
+         height: 45px
+         justify-content: center
+         align-items: center
+         .Avatar
+            width: 37px
+            height: 37px
+         .count
+            position: absolute
+            background-color: white
+            border-radius: 50px
+            width: 22px
+            height: 17px
+            margin-left: 17px
+            margin-top: -17px
+            font: 80% Prime
+            font-weight: 900
+            color: black
+            justify-content: center
+            align-items: center
+            display: flex
+            background-color: white
+            z-index: 11
+         .circle
+            width: 45px
+            height: 45px
+            position: absolute
+            background: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%) 0 0 no-repeat
+            z-index: 1
+            border-radius: 50px
+            animation: gradient-rotate 2.5s infinite
       &:hover
          background-color: $light-gray
          cursor: pointer
       .Avatar
+         z-index: 10
          font: 175% Tahoma
-         width: 45px
-         height: 45px
+         width: 43px
+         height: 43px
          display: flex
          align-items: center
          justify-content: center
          border-radius: 50px
+         border-style: solid
          color: white
+         border-width: 2px
+         border-color: white
+         position: relative
       section
          font: 100% Tahoma
          margin-left: 13px
@@ -114,27 +160,62 @@ $color6: #5DDDB2
    color: $gray !important
    
 .status
-   font-family: AwesomeRegular
+   font-family: AwesomeLight
    font-size: 14px
-   padding-top: 5px
+   padding-top: 4px
    margin-left: auto
-   color: $color6
-   letter-spacing: -9px
+   color: rgb(93, 196, 82)
+   letter-spacing: -7px
+
+.online
+   position: absolute
+   background-color: rgb(93, 196, 82)
+   border-radius: 50px
+   width: 8px
+   height: 8px
+   margin-left: 17px
+   margin-top: 12px
+   font: 80% Prime
+   font-weight: 900
+   border-width: 2px
+   border-style: solid
+   border-color: white
+   color: black
+   justify-content: center
+   align-items: center
+   display: flex
+   z-index: 11
+   
+.info
+   font-family: AwesomeSolid
+   font-size: 13px
+   padding-bottom: 0px
+   color: rgba(0,0,0,0.7)
+   font-weight: 800
 
 .name
    align-self: center
    
 .ready
    color: $color1 !important
-   
+
 .color1
-   background-color: $color1 !important
+   background: linear-gradient(135deg, $color1, $color2) !important
    
 .color2
-   background-color: $color2 !important
+   background: linear-gradient(135deg, $color2, $color3) !important
    
 .color3
-   background-color: $color3 !important
+   background: linear-gradient(135deg, $color3, $color4) !important
    
 .color4
-   background-color: $color4 !important
+   background: linear-gradient(135deg, $color4, $color5) !important
+   
+.color5
+   background: linear-gradient(135deg, $color5, $color6) !important
+   
+.color6
+   background: linear-gradient(135deg, $color6, $color7) !important
+   
+.color7
+   background: linear-gradient(135deg, $color7, $color1) !important

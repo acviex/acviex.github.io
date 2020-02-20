@@ -7,7 +7,7 @@
 
 .account-list {
   background-color: white;
-  width: 300px;
+  width: 32%;
   align-self: stretch;
   display: flex;
   flex-direction: column; }
@@ -45,6 +45,11 @@
       .account-list .search-bar input:active, .account-list .search-bar input:focus {
         background: transparent; }
 
+@keyframes gradient-rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .accounts {
   align-self: stretch;
   flex: 1;
@@ -59,18 +64,57 @@
     display: flex;
     flex-direction: row;
     background-color: transparent; }
+    .accounts button .unread {
+      position: relative;
+      display: flex;
+      width: 45px;
+      height: 45px;
+      justify-content: center;
+      align-items: center; }
+      .accounts button .unread .Avatar {
+        width: 37px;
+        height: 37px; }
+      .accounts button .unread .count {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        width: 22px;
+        height: 17px;
+        margin-left: 17px;
+        margin-top: -17px;
+        font: 80% Prime;
+        font-weight: 900;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: white;
+        z-index: 11; }
+      .accounts button .unread .circle {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        background: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%) 0 0 no-repeat;
+        z-index: 1;
+        border-radius: 50px;
+        animation: gradient-rotate 2.5s infinite; }
     .accounts button:hover {
       background-color: rgba(0, 0, 0, 0.04);
       cursor: pointer; }
     .accounts button .Avatar {
+      z-index: 10;
       font: 175% Tahoma;
-      width: 45px;
-      height: 45px;
+      width: 43px;
+      height: 43px;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 50px;
-      color: white; }
+      border-style: solid;
+      color: white;
+      border-width: 2px;
+      border-color: white;
+      position: relative; }
     .accounts button section {
       font: 100% Tahoma;
       margin-left: 13px;
@@ -103,12 +147,38 @@
   color: rgba(0, 0, 0, 0.4) !important; }
 
 .status {
-  font-family: AwesomeRegular;
+  font-family: AwesomeLight;
   font-size: 14px;
-  padding-top: 5px;
+  padding-top: 4px;
   margin-left: auto;
-  color: #5DDDB2;
-  letter-spacing: -9px; }
+  color: #5dc452;
+  letter-spacing: -7px; }
+
+.online {
+  position: absolute;
+  background-color: #5dc452;
+  border-radius: 50px;
+  width: 8px;
+  height: 8px;
+  margin-left: 17px;
+  margin-top: 12px;
+  font: 80% Prime;
+  font-weight: 900;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 11; }
+
+.info {
+  font-family: AwesomeSolid;
+  font-size: 13px;
+  padding-bottom: 0px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 800; }
 
 .name {
   align-self: center; }
@@ -117,15 +187,24 @@
   color: #7FFFD4 !important; }
 
 .color1 {
-  background-color: #7FFFD4 !important; }
+  background: linear-gradient(135deg, #7FFFD4, #5F9EA0) !important; }
 
 .color2 {
-  background-color: #5F9EA0 !important; }
+  background: linear-gradient(135deg, #5F9EA0, #8B008B) !important; }
 
 .color3 {
-  background-color: #8B008B !important; }
+  background: linear-gradient(135deg, #8B008B, #9932CC) !important; }
 
 .color4 {
-  background-color: #9932CC !important; }
+  background: linear-gradient(135deg, #9932CC, #6495ED) !important; }
+
+.color5 {
+  background: linear-gradient(135deg, #6495ED, #5DDDB2) !important; }
+
+.color6 {
+  background: linear-gradient(135deg, #5DDDB2, #F08080) !important; }
+
+.color7 {
+  background: linear-gradient(135deg, #F08080, #7FFFD4) !important; }
 
 /*# sourceMappingURL=chat.css.map */
