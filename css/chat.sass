@@ -63,7 +63,13 @@ $color7: #F08080
    100%
       transform: rotate(360deg)
             
+.accounts:hover
+   &::-webkit-scrollbar-thumb
+      background-color: rgba(95,158,160, 0.5)
+            
 .accounts
+   &::-webkit-scrollbar 
+      width: 2px
    align-self: stretch
    flex: 1
    display: flex

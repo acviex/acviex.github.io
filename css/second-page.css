@@ -72,7 +72,8 @@
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
-  text-indent: 10px; }
+  text-indent: 10px;
+  text-align: center; }
   .form__field::placeholder {
     color: transparent;
     font: 100% SansPro; }
